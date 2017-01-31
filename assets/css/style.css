@@ -148,13 +148,14 @@ nav{
     z-index:10000;
     background: #000000;
     opacity: 0.8 ;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 
 .body-section .video .description .now{
     font-family: 'Crete Round', serif;
     font-size: 13.67px;
     color: #f9af19;
-    opacity: 1;
     margin-top: 15px;
 }
 
@@ -162,7 +163,6 @@ nav{
     font-family: 'Crete Round', serif;
     font-size: 28.46px;
     color: #ffffff;
-    opacity: 1;
     margin-top: -10px;
 }
 
@@ -170,7 +170,6 @@ nav{
     font-family: 'Roboto', sans-serif;
     font-size: 11.23px;
     color: #ffffff;
-    opacity: 1;
     margin-top: -20px;
 }
 
