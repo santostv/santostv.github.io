@@ -177,7 +177,10 @@ nav{
     width: 342px;
     float: right;
 }
-
+.body-section .itens #contents{
+    overflow: auto;
+    height: 363px;
+}
 .body-section .itens .title{
     background: #fdb000;
     margin-top: -18px;
