@@ -1,13 +1,3 @@
-@font-face {
-    font-family: CreteItalic;
-    src: url(font/CreteRound-Italic.otf);
-}
-
-@font-face {
-    font-family: CreteRegular;
-    src: url(font/CreteRound-Regular.otf);
-}
-
 body{
     margin: 0;
     padding:0;
@@ -16,7 +6,7 @@ body{
     -o-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    font-family: CreteRegular;
+    font-family: 'Crete Round', serif;
     color: #a9a8a8
 }
 
@@ -26,7 +16,9 @@ a{
 
 #wrap{
     margin: 0 auto;
-    width: 1070px;
+    width: 1071px;
+    height: auto;
+    background: url('../img/bg.png') left bottom;
 }
 
 .login{
@@ -61,7 +53,8 @@ a{
     float: right;
     margin-right: 83px;
     font-size: 10px;
-    font-family: CreteItalic;
+    font-family: 'Crete Round', serif;
+    font-style: italic;
     color: #a9a8a8;
 }
 
@@ -87,7 +80,7 @@ a{
 }
 
 nav{
-    background: url("../img/banner_index.png") right center;
+    background: url("../img/banner_index_with_border.png") left top;
     height: 197px;
     width: 1070px;
     margin-top: -2px;
@@ -95,7 +88,7 @@ nav{
 
 .menu{
     float: right;
-    margin:155px 0 20px 0
+    margin:155px 0 22px 0
 }
 
 .menu li{
@@ -105,7 +98,7 @@ nav{
 
 .menu li a{
     color: #a9a8a8;
-    font-family: CreteRegular;
+    font-family: 'Crete Round', serif;
     font-size: 16px;
     padding-right: 35px;
 }
@@ -139,8 +132,46 @@ nav{
     float: left;
 }
 .body-section .video video{
-    margin: 0;
     width: 100%;
+}
+.body-section .video .player{
+    z-index: 1;
+    position: relative;
+}
+.body-section .video .description {
+    width: 170px;
+    height: 365px;
+    position: absolute;
+    top:0px;
+    left: 30px;
+    padding: 15px 16px;
+    z-index:10000;
+    background: #000000;
+    opacity: 0.8 ;
+}
+
+.body-section .video .description .now{
+    font-family: 'Crete Round', serif;
+    font-size: 13.67px;
+    color: #f9af19;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+.body-section .video .description h3{
+    font-family: 'Crete Round', serif;
+    font-size: 28.46px;
+    color: #ffffff;
+    opacity: 1;
+    margin-top: -10px;
+}
+
+.body-section .video .description p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11.23px;
+    color: #ffffff;
+    opacity: 1;
+    margin-top: -20px;
 }
 
 .body-section .itens{
@@ -217,6 +248,7 @@ nav{
 
 .footer{
     width: 1048px;
+    height: 275px;
     float: right;
     margin-top: 20px;
 }

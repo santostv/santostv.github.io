@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Santos TV</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i" rel="stylesheet">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -58,10 +60,18 @@
                 </div>
                 <div class="video">
                     <div class="player">
-                        <div>
-                            <video src="http://cdn.esplay.everstream.com.br/SAIDA/publicador/1080p_Cruzeiro_2_x_2_Santos_BASTIDORES_Brasileirao_201116_-1483538994429.mp4"></video>
+                        <video controls>
+                            <source src="http://cdn.esplay.everstream.com.br/SAIDA/publicador/1080p_Cruzeiro_2_x_2_Santos_BASTIDORES_Brasileirao_201116_-1483538994429.mp4" type="video/mp4">
+                        </video>
+                        <div class="description">
+                            <p class="now">[ Você Está assintindo ]</p>
+                            <h3>Estreia <br>da Copa <br>São Paulo</h3>
+                            <p>
+                                Ulpario everum aut voloreprem aut aute et il ipis destior epuditae prestib usaest, iminum verat mo te eventum duci ius dendignate sitiae cullend ellacea sunt aut ex exeribus dolupta temquis quaestis eos quis susam nes doluptatquam es sequas et
+                            </p>
                         </div>
                     </div>
+
                 </div>
                 <div class="itens">
                     <div class="title">
@@ -152,6 +162,10 @@
                 <img src="assets/img/conteudo_exclusivo.png" alt="" title="">
             </footer>
         </div>
+        <div class="clearfix"></div>
     </div>
+
+    <script src="assets/js/jquery-1.11.3.js" type="text/javascript"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 </html>
