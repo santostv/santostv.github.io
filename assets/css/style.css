@@ -18,7 +18,7 @@ a{
     margin: 0 auto;
     width: 1071px;
     height: auto;
-    background: url('../img/bg.png') left bottom;
+    background: url('../img/bg_wraper.png') left bottom;
 }
 
 .login{
@@ -254,4 +254,33 @@ nav{
 
 .clearfix{
     clear: both;
+}
+
+.jw-controlbar,
+.jw-dock .jw-reset{display: none !important;}
+.jw-display-icon-container .jw-background-color .jw-reset{
+    background: #fdb000 !important;
+}
+
+#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-button-color,
+#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-playlist-container .jw-icon {
+    color: rgb(255, 255, 255)!important;
+}
+
+#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-background-color,
+#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-tooltip-title,
+#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-playlist,
+#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-playlist-container .jw-option{
+    border-radius: 50% !important;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 40px !important;
+    -webkit-box-shadow: 5px 4px 12px -5px rgba(0,0,0,0.88);
+    -moz-box-shadow: 5px 4px 12px -5px rgba(0,0,0,0.88);
+    box-shadow: 5px 4px 12px -5px rgba(0,0,0,0.88);
+    margin-top: -80px !important;
+}
+
+.jw-display-icon-container .jw-icon-display{
+    font-size: 4.5em !important;
 }
