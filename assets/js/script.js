@@ -117,4 +117,5 @@ function loadVideo(file, image, id_active) {
     })
 
     playerInstance.play();
+    $('html, body').animate({scrollTop:0}, 'slow');
 }

@@ -134,10 +134,7 @@ nav{
 .body-section .video video{
     width: 100%;
 }
-.body-section .video .player{
-    z-index: 1;
-    position: relative;
-}
+
 .body-section .video-section{
     position: relative;
 }
