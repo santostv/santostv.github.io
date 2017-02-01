@@ -3,7 +3,7 @@ $(document).ready(function(){
         $('.description').hide();
     });
 
-    $('.video-section .video, .video-section .itens').mouseout(function(){
+    $('.video-section .video, .video-section .itens').mouseleave(function(){
         $('.description').show();
     });
 });
