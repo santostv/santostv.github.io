@@ -259,21 +259,25 @@ nav{
     clear: both;
 }
 
+.hide{
+    display: none;
+}
+
 .jw-controlbar,
 .jw-dock .jw-reset{display: none !important;}
 .jw-display-icon-container .jw-background-color .jw-reset{
     background: #fdb000 !important;
 }
 
-#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-button-color,
-#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-playlist-container .jw-icon {
+#myVideo .jw-button-color,
+#myVideo .jw-playlist-container .jw-icon {
     color: rgb(255, 255, 255)!important;
 }
 
-#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-background-color,
-#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-tooltip-title,
-#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-playlist,
-#player_9e227e5407d6e44fdfd56c2c36b9dd0a .jw-playlist-container .jw-option{
+#myVideo .jw-background-color,
+#myVideo .jw-tooltip-title,
+#myVideo .jw-playlist,
+#myVideo .jw-playlist-container .jw-option{
     border-radius: 50% !important;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
