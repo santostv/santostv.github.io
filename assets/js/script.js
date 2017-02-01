@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    $('.player').hover(function(){
+    $('.video-section').hover(function(){
         $('.description').hide();
     });
 
-    $('.player').mouseout(function(){
+    $('.video-section').mouseout(function(){
         $('.description').show();
     });
 });
