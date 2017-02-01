@@ -8,7 +8,7 @@ $(document).ready(function(){
     });
 });
 
-/************** CARREGA A PLAYLIST DE ID 7  ***************/
+/************** CARREGA A PLAYLIST DE ID 14  ***************/
 var head = document.head;
 var script = document.createElement("script");
 script.setAttribute('src','http://publicador.everstream.com.br/ws/playlist/get_content/14/?callback=?');
@@ -30,24 +30,24 @@ function getData(data){
             for(j in content){
                 if(j == 0){
                     html += '<div class="content active" id="content-'+j+'">'
-                    html += '   <p class="date">18.01.2017</p>'
-                    html += '   <p class="link">';
-                    html += '       <a href=javascript:loadVideo("'+content[j].video_src+'","'+ content[j].content_cover+'","content-'+j+'")>'+content[j].content_title+'</a>';
-                    html += '   </p>';
-                    html += '   <p class="hide-description hide">'+content[j].content_description+'</p>';
+                    html += '   <a href=javascript:loadVideo("'+content[j].video_src+'","'+ content[j].content_cover+'","content-'+j+'")>';
+                    html += '       <p class="date">18.01.2017</p>'
+                    html += '       <p class="link">'+content[j].content_title+'</p>'
+                    html += '       <p class="hide-description hide">'+content[j].content_description+'</p>';
+                    html += '   </a>';
                     html += '</div>';
-                    playlist_title  = content[0].content_title;
+                    playlist_title  = content[0].playlist_title;
                     content_title   = content[0].content_title;
                     content_description = content[0].content_resume;
                     first_file = content[0].video_src;
                     first_cover = content[0].content_cover;
                 }else{
                     html += '<div class="content" id="content-'+j+'">'
-                    html += '   <p class="date">18.01.2017</p>'
-                    html += '   <p class="link">';
-                    html += '       <a href=javascript:loadVideo("'+content[j].video_src+'","'+ content[j].content_cover+'","content-'+j+'")>'+content[j].content_title+'</a>';
-                    html += '   </p>';
-                    html += '   <p class="hide-description hide">'+content[j].content_description+'</p>';
+                    html += '   <a href=javascript:loadVideo("'+content[j].video_src+'","'+ content[j].content_cover+'","content-'+j+'")>';
+                    html += '       <p class="date">18.01.2017</p>'
+                    html += '       <p class="link">'+content[j].content_title+'</p>'
+                    html += '       <p class="hide-description hide">'+content[j].content_description+'</p>';
+                    html += '   </a>';
                     html += '</div>';
                 }
 
@@ -112,8 +112,7 @@ function loadVideo(file, image, id_active) {
         }else if(el.attr('id') != id_active){
             el.removeClass('active')
         }
-        $('#playlist_title').html($('#'+id_active+' a').text());
-        $('#content_title').html($('#'+id_active+' a').text());
+        $('#content_title').html($('#'+id_active+' .link').text());
         $('#content_description').html($('#'+id_active+' p.hide-description').text());
     })
 

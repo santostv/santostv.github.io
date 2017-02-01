@@ -138,6 +138,9 @@ nav{
     z-index: 1;
     position: relative;
 }
+.body-section .video-section{
+    position: relative;
+}
 .body-section .video .description {
     width: 170px;
     height: 365px;
@@ -209,11 +212,12 @@ nav{
     margin: 0;
 }
 
-.body-section .itens .content p.date{
+.body-section .itens .content a p.date{
     font-size: 12.48px;
+    color: #a9a8a8
 }
 
-.body-section .itens .content p.link a{
+.body-section .itens .content p.link{
     font-size: 16.48px;
     color: #FFFFFF
 }
