@@ -249,6 +249,63 @@ nav{
     text-align: center;
 }
 
+
+/************ PLAYOUT *****************/
+.body-section .video-section-playout .video{
+    width:100%;
+    height: 580px;
+    margin-top: -188px;
+    z-index: 1;
+}
+
+.body-section .search{
+    height: 265px;
+    width: 100%;
+    background: #eeede9;
+    position: relative;
+}
+
+.body-section .search .img-search{
+    float: left;
+    position: relative;
+    z-index: 2000;
+}
+.body-section .search .form-search .search-right{
+    float: right;
+}
+
+.body-section .search .search-right img{
+    float: right;
+    top: -200px;
+    position: relative;
+}
+.body-section .search .form-search{
+    float: left;
+    margin-left: 0;
+    background: #fdb000;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.body-section .search .form-search input{
+    width: 780px;
+    height: 24px;
+    border: none;
+    background: #fedf99;
+    margin: 5px 0 0 220px;
+}
+
+.body-section .search .form-search .btn-search{
+    background: url("../img/btn_search.png");
+    width: 38px;
+    height: 38px;
+    border: none;
+    margin: 0 0 0 0;
+    float: right;
+}
 .footer{
     width: 1048px;
     height: 275px;
