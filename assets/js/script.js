@@ -31,7 +31,7 @@ function getData(data){
                 if(j == 0){
                     html += '<div class="content active" id="content-'+j+'">'
                     html += '   <a href=javascript:loadVideo("'+content[j].video_src+'","'+ content[j].content_cover+'","content-'+j+'")>';
-                    html += '       <p class="date">18.01.2017</p>'
+                    html += '       <p class="date">'+content[j].content_date+'</p>'
                     html += '       <p class="link">'+content[j].content_title+'</p>'
                     html += '       <p class="hide-description hide">'+content[j].content_description+'</p>';
                     html += '   </a>';
@@ -44,7 +44,7 @@ function getData(data){
                 }else{
                     html += '<div class="content" id="content-'+j+'">'
                     html += '   <a href=javascript:loadVideo("'+content[j].video_src+'","'+ content[j].content_cover+'","content-'+j+'")>';
-                    html += '       <p class="date">18.01.2017</p>'
+                    html += '       <p class="date">'+content[j].content_date+'</p>'
                     html += '       <p class="link">'+content[j].content_title+'</p>'
                     html += '       <p class="hide-description hide">'+content[j].content_description+'</p>';
                     html += '   </a>';
