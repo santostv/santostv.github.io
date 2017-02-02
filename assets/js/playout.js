@@ -6,7 +6,8 @@ script.setAttribute('src','http://publicador.everstream.com.br/ws/playout/get_pl
 head.appendChild(script);
 var seek = 0;
 function playout(data){
-    var result = data.playoutresult
+    var contents = data.playoutresult.contents;
+    var video = data.playoutresult.video;
     if(data.error){
         alert(data.error);
     }else{
@@ -14,18 +15,20 @@ function playout(data){
             playlist_title = '',
             content_title = '',
             content_description = '',
+            content_date = '',
             first_file = '',
             first_cover = '';
 
-        var content = result.content;
-        var video = result.video;
-        console.log(result.video);
-        playlist_title  = content.title;
-        content_description = content.content_resume;
-        first_file = video.file;
-        first_cover = content.cover;
-        seek = video.seeking;
-        $('#playlist_title').html(playlist_title);
+
+        console.log(contents);
+        content_date        = contents.date;
+        content_title       = contents.title;
+        content_description = contents.description;
+        first_file          = video.file;
+        first_cover         = contents.cover;
+        seek                = video.seeking;
+
+        $('#content_date').html(content_date);
         $('#content_title').html(content_title);
         $('#content_description').html(content_description);
 

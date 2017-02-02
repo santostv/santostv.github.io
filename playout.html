@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <title>Santos TV</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i" rel="stylesheet">
+
     <link href="assets/css/style.css" type="text/css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://everstream1.websiteseguro.com/template_jwp7/teste/css/MySkinEverstream.css"> </link>
     <script type="text/javascript" src="https://everstream1.websiteseguro.com/template_jwp7/teste/js/jwplayer.js"> </script>
     <script type="text/javascript">jwplayer.key = "3q3t8iIybSxKCGGz24tDJPg0q1eMN2UwljLScelSCPY=";</script>
-    <script> var akaJwPlugin = new AkamaiJWPlugin(jwplayer); </script>
 </head>
 <body>
     <div id="wrap">
@@ -59,7 +58,7 @@
         </div>
         <div class="clearfix"></div>
         <div class="body-section">
-            <section about="search">
+            <section>
                 <div class="search">
                     <div class="img-search">
                         <img src="assets/img/logo-search.png" alt="" title="">
@@ -76,76 +75,55 @@
                     </div>
                 </div>
             </section>
-            <section about="media">
+            <section>
                 <div class="video-section-playout">
                     <div class="video">
                         <div class="player">
                             <div id="myVideo"></div>
                         </div>
                     </div>
-                </div>
-                <div class="title">
-                    <h1 id="playlist_title"></h1>
-                </div>
             </section>
             <div class="clearfix"></div>
-            <section about="acervo">
-                <div class="acervo">
-                    <img src="assets/img/acervo_santos_tv.png" class="img-santostv" alt="" title="">
-                    <img src="assets/img/hotsale.png" class="img-hotsale" alt="" title="">
-                </div>
-            </section>
-            <div class="clearfix"></div>
-            <section about="recent-videos">
-                <div class="recent-videos">
-                    <div class="title">
-                        <p>VÍDEOS + RECENTES</p>
-                    </div>
-                    <div class="itens">
-                        <a href="javascript:loadVideo('http://cdn.esplay.everstream.com.br/SAIDA/publicador/1080p_FUTMESA_Lucas_Lima_e_Victor_Ferraz_x_Thiago_Maia_e_Yuri-1483538711193.mp4','http://publicador.everstream.com.br/assets/upload/content/cover/586d1eed9c979.png','content-6')">
-                            <img src="assets/img/thumb_futmesa.png" alt="" title="">
-                        </a>
-                    </div>
-                    <div class="itens">
-                        <a href="javascript:loadVideo('http://cdn.esplay.everstream.com.br/SAIDA/publicador/1080p_FUTMESA_Lucas_Lima_e_Victor_Ferraz_x_Thiago_Maia_e_Yuri-1483538711193.mp4','http://publicador.everstream.com.br/assets/upload/content/cover/586d1eed9c979.png','content-6')">
-                            <img src="assets/img/thumb_goool.png" alt="" title="">
-                        </a>
-                    </div>
-                    <div class="itens">
-                        <a href="javascript:loadVideo('http://cdn.esplay.everstream.com.br/SAIDA/publicador/1080p_FUTMESA_Lucas_Lima_e_Victor_Ferraz_x_Thiago_Maia_e_Yuri-1483538711193.mp4','http://publicador.everstream.com.br/assets/upload/content/cover/586d1eed9c979.png','content-6')">
-                            <img src="assets/img/thumb_melhores_momentos.png" alt="" title="">
-                        </a>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="recent-videos">
-                    <div class="title">
-                        <p>PLAYLISTS</p>
-                    </div>
-                    <div class="itens">
-                        <a href="javascript:loadVideo('http://cdn.esplay.everstream.com.br/SAIDA/publicador/1080p_FUTMESA_Lucas_Lima_e_Victor_Ferraz_x_Thiago_Maia_e_Yuri-1483538711193.mp4','http://publicador.everstream.com.br/assets/upload/content/cover/586d1eed9c979.png','content-6')">
-                            <img src="assets/img/thumb_toucdown.png" alt="" title="">
-                        </a>
-                    </div>
-                    <div class="itens">
-                        <a href="javascript:loadVideo('http://cdn.esplay.everstream.com.br/SAIDA/publicador/1080p_FUTMESA_Lucas_Lima_e_Victor_Ferraz_x_Thiago_Maia_e_Yuri-1483538711193.mp4','http://publicador.everstream.com.br/assets/upload/content/cover/586d1eed9c979.png','content-6')">
-                            <img src="assets/img/thumb_entre_parceiros.png" alt="" title="">
-                        </a>
-                    </div>
-                    <div class="itens">
-                        <a href="javascript:loadVideo('http://cdn.esplay.everstream.com.br/SAIDA/publicador/1080p_FUTMESA_Lucas_Lima_e_Victor_Ferraz_x_Thiago_Maia_e_Yuri-1483538711193.mp4','http://publicador.everstream.com.br/assets/upload/content/cover/586d1eed9c979.png','content-6')">
-                            <img src="assets/img/thumb_minigame.png" alt="" title="">
-                        </a>
-                    </div>
-                </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="description">
+            <section id="description-playout">
+                <p class="date" id="content_date"></p>
+                <h3 class="content-title" id="content_title"></h3>
+                <p class="content-description" id="content_description"></p>
             </section>
         </div>
         <div class="clearfix"></div>
-        <div class="footer">
-            <footer>
-                <img src="assets/img/logo_socio_rei.png" alt="" title="">
-                <img src="assets/img/conteudo_exclusivo.png" alt="" title="">
-            </footer>
+        <div class="body-section" id="comments">
+            <section>
+                <p class="count-comments">comentários  •  246</p>
+                <ul class="comments">
+                    <li>
+                        <span class="user">Fulano de tal:</span>
+                        anshnajsnaksn ajsnaksnaks Um eossunt, eos erchillab inisquodis resto et eaquaspelit moluptate rem hic torpor<br>
+                        aut fuga. Offic te maxim descipsum faccati doleniet omniendit que ium raecture voluptatur?
+                    </li>
+                    <li>
+                        <span class="user">Fulano de tal:</span>
+                        anshnajsnaksn ajsnaksnaks Um eossunt, eos erchillab inisquodis resto et eaquaspelit moluptate rem hic torpor<br>
+                        aut fuga. Offic te maxim descipsum faccati doleniet omniendit que ium raecture voluptatur?
+                    </li>
+                    <li>
+                        <span class="user">Fulano de tal:</span>
+                        anshnajsnaksn ajsnaksnaks Um eossunt, eos erchillab inisquodis resto et eaquaspelit moluptate rem hic torpor<br>
+                        aut fuga. Offic te maxim descipsum faccati doleniet omniendit que ium raecture voluptatur?
+                    </li>
+                    <li>
+                        <span class="user">Fulano de tal:</span>
+                        anshnajsnaksn ajsnaksnaks Um eossunt, eos erchillab inisquodis resto et eaquaspelit moluptate rem hic torpor<br>
+                        aut fuga. Offic te maxim descipsum faccati doleniet omniendit que ium raecture voluptatur?
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+                <div class="more-comments">
+                    <a href="#" class="more">MOSTRAR MAIS</a>
+                </div>
+            </section>
         </div>
         <div class="clearfix"></div>
     </div>
