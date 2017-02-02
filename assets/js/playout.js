@@ -20,7 +20,7 @@ function playout(data){
             first_cover = '';
 
 
-        console.log(contents);
+        console.log(video);
         content_date        = contents.date;
         content_title       = contents.title;
         content_description = contents.description;
