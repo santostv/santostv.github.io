@@ -124,7 +124,7 @@ nav{
 }
 
 .body-section .video{
-    height: 392px;
+    height: 396px;
 }
 
 .body-section .video{
@@ -179,7 +179,14 @@ nav{
 }
 .body-section .itens #contents{
     overflow: auto;
-    height: 363px;
+    height: 364px;
+}
+
+.body-section .itens #contents-0,
+.body-section .itens #contents-1,
+.body-section .itens #contents-2{
+    overflow: auto;
+    height: 395px;
 }
 .body-section .itens .title{
     background: #fdb000;
@@ -383,6 +390,53 @@ nav{
     width: 100%;
 }
 
+
+/************ PLAYLIST *****************/
+.body-section .playlists-top{
+    padding: 12px 12px 12px 40px;
+}
+
+.body-section .playlists-top .top-left{
+    float:left;
+    width: 374px;
+}
+
+.body-section .playlists-top .top-left h2{
+    font-size: 43px;
+    color: #231f20;
+    margin-top: 0;
+}
+
+.body-section .playlists-top .top-left p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #231f20;
+    margin-top: -30px;
+}
+
+.body-section .playlists-top .top-right{
+    float: right;
+}
+
+.body-section .playlist-title-playlist{
+    color: #fdb000;
+    font-size: 23px;
+    font-weight: normal;
+    background: #231f20 !important;
+    height: 26px;
+    margin-top: 0px;
+    padding: 1px 0 5px 40px;
+}
+
+.body-section .video .playlist{
+    margin-top: -19px;
+    height: 397px !important;
+}
+
+.body-section .video-section.playlist{
+    margin-bottom: 40px;
+}
+
 .footer{
     width: 1048px;
     height: 275px;
@@ -412,10 +466,31 @@ nav{
     background: #fdb000 !important;
 }
 
+#myVideo-0 .jw-button-color,
+#myVideo-0 .jw-playlist-container .jw-icon,
+#myVideo-1 .jw-button-color,
+#myVideo-1 .jw-playlist-container .jw-icon,
+#myVideo-2 .jw-button-color,
+#myVideo-3 .jw-playlist-container .jw-icon,
 #myVideo .jw-button-color,
 #myVideo .jw-playlist-container .jw-icon {
     color: rgb(255, 255, 255)!important;
 }
+
+#myVideo-0 .jw-background-color,
+#myVideo-0 .jw-tooltip-title,
+#myVideo-0 .jw-playlist,
+#myVideo-0 .jw-playlist-container .jw-option,
+
+#myVideo-1 .jw-background-color,
+#myVideo-1 .jw-tooltip-title,
+#myVideo-1 .jw-playlist,
+#myVideo-1 .jw-playlist-container .jw-option,
+
+#myVideo-2 .jw-background-color,
+#myVideo-2 .jw-tooltip-title,
+#myVideo-2 .jw-playlist,
+#myVideo-2 .jw-playlist-container .jw-option,
 
 #myVideo .jw-background-color,
 #myVideo .jw-tooltip-title,
@@ -434,3 +509,5 @@ nav{
 .jw-display-icon-container .jw-icon-display{
     font-size: 4.5em !important;
 }
+
+.jwplayer.jw-flag-aspect-mode{height:396px!important}
