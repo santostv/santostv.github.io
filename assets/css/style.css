@@ -390,6 +390,14 @@ nav{
     margin-top: 20px;
 }
 
+.footer a img,
+.footer a:active,
+.footer a:visited
+{
+    border: none;
+}
+
+
 .clearfix{
     clear: both;
 }
