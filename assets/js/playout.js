@@ -1,7 +1,7 @@
 /************** CARREGA A PLAYLIST DE ID 14  ***************/
 var head = document.head;
 var script = document.createElement("script");
-script.setAttribute('src','http://publicador.everstream.com.br/ws/playout/get_playout/?callback=?');
+script.setAttribute('src','http://publicador.everstreamplay.com/ws/playout/get_playout/?callback=?');
 //script.setAttribute('src','http://localhost/everstream/ws/playout/get_playout/?callback=?');
 head.appendChild(script);
 var seek = 0;
