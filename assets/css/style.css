@@ -187,6 +187,7 @@ nav{
 .body-section .itens #contents-2{
     overflow: auto;
     height: 395px;
+    margin: 0px 0 5px 0;
 }
 .body-section .itens .title{
     background: #fdb000;
@@ -199,6 +200,37 @@ nav{
     font-size: 18px;
     color: #FFFFFF;
     padding: 5px 0 2px 16px;
+}
+
+.body-section .itens .title form{
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 5px 0 2px 5px;
+    margin-top: 17px;
+    margin-bottom: 16px;
+    height: 40px;
+}
+
+.body-section .itens form input{
+    font-family: 'Crete Round', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #231f20;
+    border: none;
+    background: #fedf99;
+    margin: 5px 0 0 0px;
+    padding: 8px auto 0px 10px;
+    height: 24px;
+    width: 290px;
+}
+
+.body-section .itens form .btn-search{
+    background: url("../img/btn_search.png");
+    width: 38px;
+    height: 38px;
+    border: none;
+    margin: -3px 5px 5px 0;
+    float: right;
 }
 
 .body-section .itens .content{
@@ -423,9 +455,8 @@ nav{
     font-size: 23px;
     font-weight: normal;
     background: #231f20 !important;
-    height: 26px;
-    margin-top: 0px;
-    padding: 1px 0 5px 40px;
+    margin-top: -1px;
+    padding: 8px 0 9px 40px;
 }
 
 .body-section .video .playlist{
