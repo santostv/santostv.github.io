@@ -122,8 +122,11 @@ function loadVideo(file, image, id_active) {
 
 $(document).ready(function(){
     var url = location.href;
-    if(url.substring(url.indexOf('#')) == '#register'){
-        var id = '#login';
+    var id = url.substring(url.indexOf('#'));
+    if(id == '#registro' || id == '#cadastro'){
+        if(id == '#registro'){
+            var id = '#login';
+        }
 
         var alturaTela = $(document).height();
         var larguraTela = $(window).width();
@@ -151,3 +154,38 @@ $(document).ready(function(){
         $(".window").hide();
     });
 });
+
+/**** Funcção para acessar o sócio rei ****/
+$('#acessar').on('click', function(){
+    var login    = $('#input-login');
+    var password = $('#input-password');
+
+    if(login.val() == ''){
+        alert('Favor preenhcer o campo Login');
+        login.focus();
+        return false;
+    }
+
+    if(password.val() == ''){
+        alert('Favor preenhcer o campo Senha');
+        password.focus();
+        return false;
+    }
+
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost/everstream/ws/user/get/',
+        data: {email: login.val(), password: password.val(), callback: 'loga'},
+        async: false,
+        jsonpCallback: 'loga',
+        dataType: 'jsonp',
+    });
+});
+
+function loga(data){
+    console.log(data.usergroup.email.length)
+    if(parseInt(data.usergroup.email.length) > 0 && parseInt(data.usergroup.id.length) > 0){
+        localStorage.setItem("logado", "1");
+        window.location.href = "socio-rei.html";
+    }
+}

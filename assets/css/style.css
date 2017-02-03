@@ -493,7 +493,7 @@ nav{
 
 .window{
     display:none;
-    width:744px;
+    width:780px;
     height:400px;
     position:absolute;
     left:0;
@@ -531,37 +531,44 @@ nav{
     padding-top: -5px;
 }
 
-#login .login-left{
+#login .login-left,
+#cadastro .login-left {
     float: left;
 }
 
-#login .login-left .santostv{
+#login .login-left .santostv,
+#cadastro .login-left .santostv{
     margin-left: 15px;
 }
-#login .login-right{
+#login .login-right,
+#cadastro .login-right{
     float: left;
     margin: 26px 50px ;
 }
-#login .login-right p{
+#login .login-right p,
+#cadastro .login-right p{
     font-size: 22px;
     color: #231f20;
     font-weight: normal;
     text-indent: each-line;
 }
 
-#login .login-right .register{
+#login .login-right .register,
+#cadastro .login-right .register{
     font-size: 13px;
     color: #231f20;
     margin-top: 64px;
 }
 
-#login .login-right label{
+#login .login-right label,
+#cadastro .login-right label{
     margin-top: 26px;
     font-size: 15px;
     color: #231f20;
 }
 
-#login .login-right input{
+#login .login-right input,
+#cadastro .login-right input{
     width: 455px;
     height: 18px;
     background: #FFFFFF;
@@ -569,7 +576,8 @@ nav{
     margin-top: 5px;
 }
 
-#login .login-right .btn.btn-danger{
+#login .login-right .btn.btn-danger,
+#cadastro .login-right .btn.btn-danger{
     float: left;
     width: 173px;
     height: 30px;
@@ -581,7 +589,8 @@ nav{
     margin-top: 24px;
 }
 
-#login .login-right .btn.btn-success {
+#login .login-right .btn.btn-success,
+#cadastro .login-right .btn.btn-success {
     float: right;
     width: 104px;
     height: 30px;
