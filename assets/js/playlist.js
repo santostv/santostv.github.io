@@ -11,8 +11,8 @@ $(document).ready(function(){
 /************** CARREGA A PLAYLIST DE ID 14  ***************/
 var head = document.head;
 var script = document.createElement("script");
-script.setAttribute('src','http://publicador.everstreamplay.com/ws/playlist/get_content/?callback=?');
-//script.setAttribute('src','http://localhost/everstream/ws/playlist/get_content/?callback=getData');
+//script.setAttribute('src','http://publicador.everstreamplay.com/ws/playlist/get_content/?callback=?');
+script.setAttribute('src','http://localhost/everstream/ws/playlist/get_content/?callback=?');
 head.appendChild(script);
 function getData(data){
     var result = data.playlistresult
@@ -27,11 +27,11 @@ function getData(data){
             first_cover = '',
             k = 0;
 
+console.log(result)
         for(i in result){
             if(k <=2){
                 var content = result[i].content;
                 for(j in content){
-                    console.log(content[j])
                     if(j == 0){
                         html += '<div class="content active" id="content-'+j+'">'
                         html += '   <a href=javascript:loadVideo("'+content[j].video_src+'","'+ content[j].content_cover+'","'+j+'","'+k+'")>';
@@ -46,7 +46,7 @@ function getData(data){
                         first_file = content[0].video_src;
                         first_cover = content[0].content_cover;
                     }else{
-                        html += '<div class="content" id="content-'+j+'">'
+                        html += '<div class="content" id="content-'+k+'">'
                         html += '   <a href=javascript:loadVideo("'+content[j].video_src+'","'+ content[j].content_cover+'","'+j+'","'+k+'")>';
                         html += '       <p class="date">'+content[j].content_date+'</p>'
                         html += '       <p class="link">'+content[j].content_title+'</p>'
@@ -55,12 +55,12 @@ function getData(data){
                         html += '</div>';
                     }
                 }
-                delete result[i];
+
                 $('#contents-'+k).html(html);
                 $('#playlist_title-'+k).html('[ '+playlist_title+' ]');
                 $('#content_title-'+k).html(content_title);
                 $('#content_description-'+k).html(content_description);
-                html = '';
+
                 jwplayer('myVideo-'+k).setup({
                     "key":"3q3t8iIybSxKCGGz24tDJPg0q1eMN2UwljLScelSCPY=",
                     "abouttext":"produzido por everstream.com.br",
@@ -87,6 +87,7 @@ function getData(data){
                     "aspectratio":"16:9",
                     "autostart":"false"
                 });
+                delete result[j]
                 k= k+1;
             }
 
@@ -97,6 +98,7 @@ function getData(data){
 
 
 function loadVideo(file, image, id_active, id_content ) {
+    alert("myVideo-"+id_content)
     var playerInstance = jwplayer("myVideo-"+id_content);
     playerInstance.load([{
         file: file,
@@ -106,9 +108,9 @@ function loadVideo(file, image, id_active, id_content ) {
 
     $('#contents-'+id_content+' .content').each(function(){
         el = $(this);
-        if(el.attr('id') == 'content-'+id_active && !el.hasClass('active')){
+        if(el.attr('id') == 'contents-'+id_active && !el.hasClass('active')){
             el.addClass('active')
-        }else if(el.attr('id') != 'content-'+id_active){
+        }else if(el.attr('id') != 'contents-'+id_active){
             el.removeClass('active')
         }
         $('#content_title').html($('#'+id_active+' .link').text());
@@ -117,3 +119,7 @@ function loadVideo(file, image, id_active, id_content ) {
 
 
 }
+
+$(".content").on('click',function(){
+    alert($(this).attr('id'))
+})
