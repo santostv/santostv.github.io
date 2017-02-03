@@ -31,7 +31,6 @@ function getData(data){
             if(k <=2){
                 var content = result[i].content;
                 for(j in content){
-                    console.log(content[j])
                     if(j == 0){
                         html += '<div class="content active" id="content-'+j+'">'
                         html += '   <a href=javascript:loadVideo("'+content[j].video_src+'","'+ content[j].content_cover+'","'+j+'","'+k+'")>';
