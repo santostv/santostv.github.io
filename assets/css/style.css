@@ -491,6 +491,108 @@ nav{
     display: none;
 }
 
+.window{
+    display:none;
+    width:744px;
+    height:400px;
+    position:absolute;
+    left:0;
+    top:0;
+    background-color: rgba(220,221,220,0.9);
+    z-index:19900;
+    padding:10px;
+    border-radius:2px;
+
+    padding: 44px 0 0 44px;
+}
+
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+
+.fechar{
+    display:block;
+    background: #a91c23;
+    color: #ffffff;
+    font-size: 20px;
+    float: right;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    right: -12px;
+    top: -12px;
+    text-align: center;
+    position: absolute;
+    padding-top: -5px;
+}
+
+#login .login-left{
+    float: left;
+}
+
+#login .login-left .santostv{
+    margin-left: 15px;
+}
+#login .login-right{
+    float: left;
+    margin: 26px 50px ;
+}
+#login .login-right p{
+    font-size: 22px;
+    color: #231f20;
+    font-weight: normal;
+    text-indent: each-line;
+}
+
+#login .login-right .register{
+    font-size: 13px;
+    color: #231f20;
+    margin-top: 64px;
+}
+
+#login .login-right label{
+    margin-top: 26px;
+    font-size: 15px;
+    color: #231f20;
+}
+
+#login .login-right input{
+    width: 455px;
+    height: 18px;
+    background: #FFFFFF;
+    border: none;
+    margin-top: 5px;
+}
+
+#login .login-right .btn.btn-danger{
+    float: left;
+    width: 173px;
+    height: 30px;
+    background: #d2232a;
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 15px;
+    border: none;
+    margin-top: 24px;
+}
+
+#login .login-right .btn.btn-success {
+    float: right;
+    width: 104px;
+    height: 30px;
+    background: #40ae49;
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 20px;
+    border: none;
+    margin-top: 24px;
+    margin-left: 0;
+}
 .jw-controlbar,
 .jw-dock .jw-reset{display: none !important;}
 .jw-display-icon-container .jw-background-color .jw-reset{
