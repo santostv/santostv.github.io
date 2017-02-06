@@ -13,7 +13,7 @@ $(document).ready(function(){
 $(function(){
     $.ajax({
         type: 'GET',
-        url: '0https://publicador.everstreamplay.com/ws/playlist/get_content',
+        url: 'https://publicador.everstreamplay.com/ws/playlist/get_content',
         data: {id: 14, callback: 'getData'},
         async: false,
         jsonpCallback: 'getData',
