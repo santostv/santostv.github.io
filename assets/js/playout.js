@@ -1,9 +1,23 @@
 /************** CARREGA A PLAYLIST DE ID 14  ***************/
-var head = document.head;
-var script = document.createElement("script");
-script.setAttribute('src','https://publicador.everstreamplay.com/ws/playout/get_playout/playout');
-//script.setAttribute('src','http://localhost/everstream/ws/playout/get_playout/list/playout');
-head.appendChild(script);
+
+$(function(){
+    $.ajax({
+        type: 'GET',
+        url: 'https://publicador.everstreamplay.com/ws/playout/get_playout',
+        data: {callback: 'playout'},
+        async: false,
+        jsonpCallback: 'playout',
+        dataType: 'jsonp',
+        success: function(data){
+        },
+        error: function(e){
+            console.log(e)
+        }
+    });
+
+});
+
+
 var seek = 0;
 function playout(data){
     var contents = data.playoutresult.contents;
