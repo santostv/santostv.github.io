@@ -468,6 +468,94 @@ nav{
     margin-bottom: 40px;
 }
 
+
+/************ ACERVO *****************/
+.body-section .playlists-top .acervo{
+}
+
+.body-section .playlists-top.acervo .top-left{
+    float:left;
+    width: 295px;
+}
+
+.body-section .playlists-top.acervo .top-left p{
+    color: #231f20;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    width: 280px;
+}
+
+.body-section .playlists-top .top-right{
+    float: right;
+}
+
+.body-section .video.acervo{
+    width: 700px;
+    float: left;
+    margin-top: 12px;
+    margin-right: -12px;
+}
+
+.body-section .playlist-title-playlist.acervo{
+    width: 442px;
+    height: 30px;
+    margin-top:38px
+}
+
+.body-section .video-section.playlist.acervo{
+    margin-bottom: 0;
+    height: 30px;
+}
+table{
+    margin-left: -3px;
+    margin-right: -13px;
+}
+table tr td:first-child{
+    margin-left: 10px;
+}
+
+table tr td{
+    height: 232px;
+    width: 300px;
+    vertical-align: top;
+}
+table tr td p{
+    font-size: 11px;
+    color: #a7a9ac;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+table tr td h5{
+    font-size: 14px;
+    color: #231f20;
+    margin-top: -10px;
+    margin-left: 18px;
+    text-transform: uppercase;
+}
+
+table .banner-square{
+    padding: 19px 50px 0px 50px;
+}
+.body-section .itens.acervo{
+    width: 564px;
+    height: 30px;
+    margin-top: -65px;
+}
+.body-section .acervo.videos{
+    float: left;
+}
+
+.body-section .players{
+    width:246px;
+}
+
+.body-section .itens.acervo form input{
+    width: 514px;
+}
+
 .footer{
     width: 1048px;
     height: 275px;
@@ -641,11 +729,12 @@ nav{
     border-radius: 50% !important;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    padding: 40px !important;
+    padding: 40px ;
     -webkit-box-shadow: 5px 4px 12px -5px rgba(0,0,0,0.88);
     -moz-box-shadow: 5px 4px 12px -5px rgba(0,0,0,0.88);
     box-shadow: 5px 4px 12px -5px rgba(0,0,0,0.88);
-    margin-top: -80px !important;
+    margin-top: -80px;
+    margin-top: -80px;
 }
 
 .jw-display-icon-container .jw-icon-display{
@@ -653,3 +742,26 @@ nav{
 }
 
 .jwplayer.jw-flag-aspect-mode{height:396px!important}
+
+
+.players.acervo .jw-button-color, #myVideo .jw-playlist-container .jw-icon {
+    color: rgb(255, 255, 255) !important;
+}
+
+.players.acervo .jw-background-color,
+.players.acervo .jw-tooltip-title,
+.players.acervo .jw-playlist,
+.players.acervo .jw-playlist-container .jw-option{
+    border-radius: 50% !important;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 5px !important;
+    -webkit-box-shadow: 5px 4px 12px -5px rgba(0,0,0,0.88);
+    -moz-box-shadow: 5px 4px 12px -5px rgba(0,0,0,0.88);
+    box-shadow: 5px 4px 12px -5px rgba(0,0,0,0.88);
+    margin-top: -40px !important;
+}
+
+.players.acervo .jw-display-icon-container .jw-icon-display{
+    font-size: 1.8em !important;
+}
