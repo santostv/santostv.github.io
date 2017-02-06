@@ -74,14 +74,14 @@ function getData(data){
                         "link":null,
                         "sites":["facebook","twitter","googleplus"]
                     },
-                    "width":"100%",
-                    "height":"100%",
-                    //"aspectratio":"16:9",
+                    "width":"245",
+                    "height":"138",
+                    "aspectratio":"16:9",
                     "autostart":"false"
                 });
 
                 $('#contents-'+i).html(html);
-                $('#acervo_date_'+i).html(content_date)
+                $('#acervo_date_'+i).html(content_date.replace(/\//g,'.'))
                 $('#acervo_title_'+i).html(playlist_title);
                 $('#content_title-'+i).html(content_title);
                 $('#content_description-'+i).html(content_description);
