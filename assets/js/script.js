@@ -156,7 +156,9 @@ $(document).ready(function(){
 });
 
 /**** Funcção para acessar o sócio rei ****/
-$('#acessar').on('click', function(){
+$('#signupForm').submit(function(event) {
+    event.preventDefault();
+
     var login    = $('#input-login');
     var password = $('#input-password');
 
@@ -173,7 +175,6 @@ $('#acessar').on('click', function(){
     }
 
     $.ajax({
-        type: 'POST',
         url: 'https://publicador.everstreamplay.com/ws/user/get/',
         data: {email: login.val(), password: password.val(), callback: 'loga'},
         async: false,
@@ -183,9 +184,12 @@ $('#acessar').on('click', function(){
 });
 
 function loga(data){
-    console.log(data.usergroup.email.length)
-    if(parseInt(data.usergroup.email.length) > 0 && parseInt(data.usergroup.id.length) > 0){
+    if(data.error) {
+        alert(data.error)
+    }else if(parseInt(data.user.email.length) > 0 && parseInt(data.user.id.length) > 0){
         window.sessionStorage.setItem('user', JSON.stringify(data));
         window.location.href = "socio-rei.html";
+    }else{
+        alert('Ocorreu um erro ao tentar recuperar seu acesso!')
     }
 }
