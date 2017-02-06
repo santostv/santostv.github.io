@@ -470,12 +470,15 @@ nav{
 
 
 /************ ACERVO *****************/
-.body-section .playlists-top .acervo{
+.body-section .itens.hidden{
+    overflow: hidden;
+    width: 1px;
 }
 
 .body-section .playlists-top.acervo .top-left{
     float:left;
-    width: 295px;
+    width: 308px;
+    margin-top: 20px;
 }
 
 .body-section .playlists-top.acervo .top-left p{
@@ -492,7 +495,8 @@ nav{
 }
 
 .body-section .video.acervo{
-    width: 700px;
+    width: 688px;
+    height: 392px;
     float: left;
     margin-top: 12px;
     margin-right: -12px;
@@ -501,34 +505,36 @@ nav{
 .body-section .playlist-title-playlist.acervo{
     width: 442px;
     height: 30px;
-    margin-top:38px
+    margin-top: -10px;
 }
 
 .body-section .video-section.playlist.acervo{
     margin-bottom: 0;
     height: 30px;
 }
+
 table{
     margin-left: -3px;
-    margin-right: -13px;
+    margin-right: -15px;
 }
 table tr td:first-child{
     margin-left: 10px;
 }
 
 table tr td{
-    height: 232px;
+    height: 212px;
     width: 300px;
     vertical-align: top;
+    padding-bottom: 5px;
 }
 table tr td p{
     font-size: 11px;
     color: #a7a9ac;
-    margin-top: 18px;
+    margin-top: 2px;
     margin-left: 18px;
 }
 
-table tr td h5{
+table tr td .acervo-title{
     font-size: 14px;
     color: #231f20;
     margin-top: -10px;
@@ -549,7 +555,8 @@ table .banner-square{
 }
 
 .body-section .players{
-    width:246px;
+    width:245px;
+    height: 168px;
 }
 
 .body-section .itens.acervo form input{
