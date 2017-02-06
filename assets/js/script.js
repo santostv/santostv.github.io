@@ -9,10 +9,25 @@ $(document).ready(function(){
 });
 
 /************** CARREGA A PLAYLIST DE ID 14  ***************/
-var head = document.head;
-var script = document.createElement("script");
-script.setAttribute('src','https://publicador.everstreamplay.com/ws/playlist/get_content/14/getData');
-head.appendChild(script);
+
+$(function(){
+    $.ajax({
+        type: 'GET',
+        url: '0https://publicador.everstreamplay.com/ws/playlist/get_content',
+        data: {id: 14, callback: 'getData'},
+        async: false,
+        jsonpCallback: 'getData',
+        dataType: 'jsonp',
+        success: function(data){
+        },
+        error: function(e){
+            console.log(e)
+        }
+    });
+
+});
+
+
 function getData(data){
     var result = data.playlistresult
     if(data.error){
