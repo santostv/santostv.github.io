@@ -11,7 +11,7 @@ $(document).ready(function(){
 /************** CARREGA A PLAYLIST DE ID 14  ***************/
 var head = document.head;
 var script = document.createElement("script");
-script.setAttribute('src','http://publicador.everstreamplay.com/ws/playlist/get_content/null/getData');
+script.setAttribute('src','https://publicador.everstreamplay.com/ws/playlist/get_content/null/getData');
 //script.setAttribute('src','http://localhost/everstream/ws/playlist/get_content/null/getData');
 head.appendChild(script);
 function getData(data){
