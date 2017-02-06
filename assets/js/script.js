@@ -174,7 +174,7 @@ $('#acessar').on('click', function(){
 
     $.ajax({
         type: 'POST',
-        url: 'http://localhost/everstream/ws/user/get/',
+        url: 'https://publicador.everstreamplay.com/ws/user/get/',
         data: {email: login.val(), password: password.val(), callback: 'loga'},
         async: false,
         jsonpCallback: 'loga',
@@ -185,7 +185,7 @@ $('#acessar').on('click', function(){
 function loga(data){
     console.log(data.usergroup.email.length)
     if(parseInt(data.usergroup.email.length) > 0 && parseInt(data.usergroup.id.length) > 0){
-        localStorage.setItem("logado", "1");
+        window.sessionStorage.setItem('user', JSON.stringify(data));
         window.location.href = "socio-rei.html";
     }
 }
