@@ -271,6 +271,7 @@ input:-moz-placeholder { color: #231f20; padding-left:  10px!important;;}
 .body-section .itens .content p.link{
     font-size: 16px;
     color: #FFFFFF;
+    margin-left: 30px;
     text-transform: uppercase;
 }
 
@@ -572,6 +573,8 @@ input:-moz-placeholder { color: #231f20; padding-left:  10px!important;;}
     height: auto;
     width: 100%;
     margin-top: -10px;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
 }
 
 .body-section .imprensa .itens .description .download a{
