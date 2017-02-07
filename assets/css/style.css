@@ -131,12 +131,19 @@ nav{
     width: 704px;
     float: left;
 }
+
+.body-section .video.playlist{
+    width:512px;
+    float: left;
+}
+
 .body-section .video video{
     width: 100%;
 }
 
 .body-section .video-section{
     position: relative;
+    float: left;
 }
 .body-section .video .description {
     width: 170px;
@@ -182,11 +189,16 @@ nav{
     height: 364px;
 }
 
+.body-section .itens.playlist{
+    width: 532px;
+    float: right;
+}
+
 .body-section .itens #contents-0,
 .body-section .itens #contents-1,
 .body-section .itens #contents-2{
     overflow: auto;
-    height: 395px;
+    height: 288px;
     margin: 0px 0 5px 0;
 }
 .body-section .itens .title{
@@ -239,7 +251,7 @@ input:-moz-placeholder { color: #231f20; padding-left:  10px!important;;}
 .body-section .itens .content{
     background: #56534f;
     margin: -2px 0 5px 0;
-    padding: 14px 0 13.5px 16px;
+    padding: 24px 0 28px 16px;
 }
 
 .body-section .itens .content.active {
@@ -257,8 +269,13 @@ input:-moz-placeholder { color: #231f20; padding-left:  10px!important;;}
 }
 
 .body-section .itens .content p.link{
-    font-size: 16.48px;
-    color: #FFFFFF
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.body-section .itens.playlist .content p.link {
+    margin-left: 30px;
 }
 
 .body-section .acervo{
@@ -436,7 +453,7 @@ input:-moz-placeholder { color: #231f20; padding-left:  10px!important;;}
     width: 374px;
 }
 
-.body-section .playlists-top .top-left h2{
+.body-section .playlists-top .top-left .title_playlist{
     font-size: 43px;
     color: #231f20;
     margin-top: 0;
@@ -447,6 +464,7 @@ input:-moz-placeholder { color: #231f20; padding-left:  10px!important;;}
     font-size: 17px;
     color: #231f20;
     margin-top: -30px;
+    text-transform: uppercase;
 }
 
 .body-section .playlists-top .top-right{
@@ -458,19 +476,27 @@ input:-moz-placeholder { color: #231f20; padding-left:  10px!important;;}
     font-size: 23px;
     font-weight: normal;
     background: #231f20 !important;
-    margin-top: -1px;
+    margin-top: -1px !important;
     padding: 8px 0 9px 40px;
+    text-transform: uppercase;
+    width:472px !important;
 }
 
 .body-section .video .playlist{
     margin-top: -19px;
+    width: 512px;
     height: 397px !important;
 }
 
 .body-section .video-section.playlist{
     margin-bottom: 40px;
+    height: 296px;
 }
 
+.body-section .itens.playlist form input{
+    width:470px;
+    margin-left:12px
+}
 
 /************ ACERVO *****************/
 .body-section .itens.hidden{
@@ -506,9 +532,9 @@ input:-moz-placeholder { color: #231f20; padding-left:  10px!important;;}
 }
 
 .body-section .playlist-title-playlist.acervo{
-    width: 442px;
+    width: 442px !important;
     height: 30px;
-    margin-top: -10px;
+    margin-top: 30px !important;
 }
 
 .body-section .video-section.playlist.acervo{
@@ -551,6 +577,7 @@ table .banner-square{
     width: 564px;
     height: 30px;
     margin-top: -65px;
+    margin-left: 482px;
 }
 .body-section .acervo.videos{
     float: left;
@@ -587,6 +614,18 @@ table .banner-square{
 
 .hide{
     display: none;
+}
+
+.seta-direita:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #FFFFFF;
 }
 
 .window{
