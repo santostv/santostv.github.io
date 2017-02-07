@@ -38,7 +38,7 @@ function playlist(data){
                 html += '       </div>';
                 html += '       <div class="description">';
                 html += '           <p>' + content[j].content_description + '</p>';
-                html += '           <p class="download"><a href="#"><i class="fa fa-download" aria-hidden="true"></i> </a> </p>';
+                html += '           <p class="download"><a href="'+content[j].video_src+'" download><i class="fa fa-download" aria-hidden="true"></i> </a> </p>';
                 html += '       </div>';
                 html += '   </div>';
                 html += '</div>';
