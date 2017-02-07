@@ -451,6 +451,7 @@ input:-moz-placeholder { color: #231f20; padding-left:  10px!important;;}
 .body-section .playlists-top .top-left{
     float:left;
     width: 374px;
+    height: 48px;
 }
 
 .body-section .playlists-top .top-left .title_playlist{
@@ -496,6 +497,89 @@ input:-moz-placeholder { color: #231f20; padding-left:  10px!important;;}
 .body-section .itens.playlist form input{
     width:470px;
     margin-left:12px
+}
+
+/************ IMPRENSA ***************/
+.body-section .playlists-top .top-left .title_imprensa {
+    font-size: 43px;
+    color: #231f20;
+    margin-top: 0;
+    margin-left: -25px;
+    width: 1000px;
+}
+
+#imprensa{
+    margin-top: 50px;
+    height: auto;
+}
+
+
+.body-section .imprensa{
+    background: #231f20 !important;
+    clear: both;
+    width: 98%;
+    min-height: 270px;
+    height: auto !important;
+    margin-bottom: 30px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.body-section .imprensa .itens{
+    float: left;
+    display: inline-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    background: #231f20 !important;
+}
+
+.body-section .imprensa-title{
+    color: #fdb000;
+    font-size: 23px;
+    font-weight: normal;
+    background: #231f20 !important;
+    margin-top: 1px !important;
+    padding: 8px 0 0 20px;
+    text-transform: uppercase;
+    width: 1000px !important;
+}
+
+.body-section .imprensa .itens .thumb{
+    width: 325px;
+    height: 201px;
+    margin-left: 20px;
+    margin-top: -12px;
+    background: #231f20 !important;
+}
+
+.body-section .imprensa .itens .description{
+    width: 700px;
+    height: auto;
+    margin-left: 15px;
+    background: #231f20 !important;
+    position: relative;
+}
+
+.body-section .imprensa .itens .description p{
+    color: #FFFFFF;
+    font-size: 16px;
+    height: auto;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.body-section .imprensa .itens .description .download a{
+    color: #FFFFFF !important;
+    font-size: 24px;
+    right: 10px;
+    bottom: 0px;
+    position: absolute;
 }
 
 /************ ACERVO *****************/

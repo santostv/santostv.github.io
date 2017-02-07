@@ -193,7 +193,6 @@ function playlist(data){
             });
         }
     }
-
 }
 
 function loadVideo(file, image, id_active, id_content ) {
