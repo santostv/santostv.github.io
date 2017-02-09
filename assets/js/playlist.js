@@ -42,8 +42,10 @@ function getData(data){
             k = 0;
 
         for(i in result){
-            if(k <=2){
-                var content = result[i].content;
+            var content = result[i].content;
+            if((content[0] && (
+                    content[0]['playlist_id'] == 11 || content[0]['playlist_id'] == 12 || content[0]['playlist_id'] == 8
+                ))){
                 for(j in content){
                     if(j == 0){
                         html += '<div class="content active" id="content-'+j+'">'

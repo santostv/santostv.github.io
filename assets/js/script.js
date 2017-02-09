@@ -14,7 +14,7 @@ $(function(){
     $.ajax({
         type: 'GET',
         url: 'https://publicador.everstreamplay.com/ws/playlist/get_content',
-        data: {id: 14, callback: 'getData'},
+        data: {id: 25, callback: 'getData'},
         async: false,
         jsonpCallback: 'getData',
         dataType: 'jsonp',

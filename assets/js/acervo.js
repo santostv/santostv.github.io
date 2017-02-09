@@ -43,7 +43,7 @@ function getData(data){
             first_cover = '',
             k = 0;
 
-            var content = result[14].content;
+            var content = result[22].content;
 
             content_date = content[0].content_date;
             playlist_title  = content[0].playlist_title;
